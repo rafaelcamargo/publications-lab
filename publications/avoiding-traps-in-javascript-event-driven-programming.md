@@ -19,7 +19,7 @@ happened*, not *what must happen*. The component that is publishing some event
 should never know anything outside it.
 Though it might be so clear now, it can be easily get messy. So, always ensure
 the event you're publishing is saying what happened, not what other part of
-your code needs to do.
+your code needs to do. More about event names [here](http://cqrs.nu/tutorial/cs/01-design)
 
 ![targeting](https://cloud.githubusercontent.com/assets/4738687/24687479/25b397c0-1990-11e7-8f0b-3f0e3b37b6eb.png)
 
