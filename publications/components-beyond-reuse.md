@@ -10,7 +10,7 @@ a) In the first weird case, I see developers considering a View as a component. 
  
 b) In the second one, I see developers not considering logicless components as components. They think markup are not worth of encapsulation. The result is a markup code replication and, consequently, pain at the moment you need to make changes in something that should be in one place only.
 
-First of all, I would like to share the concept of what I believe to be a component. These are some wise words written by Derick Bailey in one of his blog posts:
+First of all, I would like to share the concept of what I believe to be a component. These are some wise words written by [Derick Bailey](https://twitter.com/derickbailey) in one of his [blog posts](https://derickbailey.com/2015/08/26/building-a-component-based-web-ui-with-modern-javascript-frameworks/):
 
 > [...] a component in a web application’s UI could be the display panel used to show an employee’s information, such as their name, email address, employee id and more. This component may include buttons to edit the employee or other controls to perform other functions as well.
 >
