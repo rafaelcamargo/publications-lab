@@ -4,7 +4,7 @@ We are living times where Model/View/Controller concept is getting more and more
 
 However, as well as Component-based has become a so popular concept, I still see a lot of developers understanding components in a surprisingly weird way.
 
-Which kind of weirdness (you might be thinking)?
+Which kind of weirdness? (you might be thinking)
 
 a) In the first weird case, I see developers considering a View as a component. So, the "component" is, in fact, a huge piece of code extremely coupled with its context offering zero flexibility and reuse.
  
