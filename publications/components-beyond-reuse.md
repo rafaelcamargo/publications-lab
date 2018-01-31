@@ -40,4 +40,4 @@ The homepage tests will not pass anymore. You have just changed it. The same can
 
 ![dilicate-surgery-vs-flexibility](https://user-images.githubusercontent.com/4738687/35625938-3d17e50a-067b-11e8-8df1-aed2a12dcb66.png)
 
-As you can see, reusability is actually a consequence of the above two benefits. When you break any View in several small pieces of code (small responsibilities), you make it so easy to move them from a context to another (flexibility) or, consequently, reuse them in any other View.
+As you can see, reuse is actually a consequence of the above two benefits. When you break any View in several small pieces of code (small responsibilities), you make it so easy to move them from a context to another (flexibility) or, consequently, reuse them in any other View.
