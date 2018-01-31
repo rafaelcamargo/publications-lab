@@ -20,17 +20,23 @@ That said, I'll show you two other benefits beyond reuse which most of the peopl
 
 ## Small Responsibilities
 
+When you encapsulate a small part of a View in an independent component, you are removing responsibilities from a huge piece of code that would be controlling the whole View. Imagine a website showing some Weather Card on its homepage. On the same homepage you have a bar showing some current stock prices, a logo, a carousel containing some breaking news, and a card with real-time currency rates.
+
 ![view-into-components](https://user-images.githubusercontent.com/4738687/35625921-2fc52e08-067b-11e8-9c2c-460e79a87dd5.png)
 
-When you encapsulate a small part of a View in an independent component, you are removing responsibilities from a huge piece of code that would be controlling the whole View. Imagine a website showing some Weather Card on its homepage. On the same homepage, you have a logo, a carousel containing some breaking news, a bar showing some current stock prices and a panel with real-time currency rates. Why should be the entire homepage controlled by one piece of code only? That doesn't make sense. As much you concentrate responsibility, less you enjoy the power of flexibility.
+Why should be the entire homepage controlled by one piece of code only? That doesn't make sense. As much you concentrate responsibility, less you enjoy the power of flexibility.
 
 ## Flexibility
 
+Now, suppose the product team decided to move the Weather Card to another View. You have in your hands the job of moving it from one View to another. So easy, right?
+
 ![moving-component-between-views](https://user-images.githubusercontent.com/4738687/35625929-349af1ec-067b-11e8-8c74-73c612eb3486.png)
 
-Now, suppose the product team decided to move the Weather Card to another View. You have in your hands the job of moving it from one View to another. So easy, right?
-Maybe. It depends on how you have organized the code distributed along the homepage. If the homepage is controlled by one piece of code only, you will probably need to make a delicate surgery on this. You have to remove the portion of code related to the Weather Card from those huge homepage files (HTML & Javascript). Then, you will need to accommodate this exact same portion of code into the other View's files. Is that done, ok? Not yet. The homepage's tests will not pass anymore. You have just changed it. The same can happen to the other View's tests, once you have also changed that.
-In a Component-Based approach, Weather Card is a component. It encapsulates all its markup, style, logic and tests. So, all you have to do is moving a simple HTML tag from one View to the other one.
+Maybe. It depends on how you have organized the code distributed along the homepage. If the homepage is controlled by one piece of code only, you will probably need to make a delicate surgery on this. You have to remove the portion of code related to the Weather Card from those huge homepage files. Then, you will need to accommodate this exact same portion of code into the other View's files.
+
+Is that done, ok? Not yet.
+
+The homepage tests will not pass anymore. You have just changed it. The same can happen to the other View tests, once you have also changed that. In a Component-Based approach, Weather Card is a component. It encapsulates all its markup, style, logic and tests. So, all you have to do is moving a simple HTML tag from one View to the other one.
 
 ![dilicate-surgery-vs-flexibility](https://user-images.githubusercontent.com/4738687/35625938-3d17e50a-067b-11e8-8df1-aed2a12dcb66.png)
 
