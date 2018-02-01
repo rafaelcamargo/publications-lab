@@ -6,7 +6,7 @@ However, as well as Component-based has become a so popular concept, I still see
 
 Which kind of weirdness? (you might be thinking)
 
-a) In the first weird case, I see developers considering a View as a component. So, the "component" is, in fact, a huge piece of code extremely coupled with its context offering zero flexibility and reuse.
+a) In the first case, I see developers considering a View as a component. So, the "component" is, in fact, a huge piece of code extremely coupled with its context offering zero flexibility and reuse.
  
 b) In the second one, I see developers not considering logicless components as components. They think markup is not worth encapsulation. The result is a markup code replication and, consequently, pain at the moment you need to make changes in something that should be in one place only.
 
