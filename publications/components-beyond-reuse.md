@@ -24,7 +24,7 @@ When you encapsulate a small part of a View in an independent component, you are
 
 ![view-into-components](https://user-images.githubusercontent.com/4738687/35625921-2fc52e08-067b-11e8-9c2c-460e79a87dd5.png)
 
-Why should be the entire homepage controlled by one piece of code only? That doesn't make sense. As much you concentrate responsibility, less you enjoy the power of flexibility.
+Why should be the entire homepage controlled by one piece of code only? That doesn't make sense. The more you concentrate responsibility, less you enjoy the power of flexibility.
 
 ## Flexibility
 
