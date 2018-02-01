@@ -1,6 +1,6 @@
 # Components beyond reuse
 
-We are living times where Model/View/Controller concept is getting more and more obsolete making Component-Based approach the new standard to develop web applications now. 
+We are living times where the Model/View/Controller concept is getting more and more obsolete making Component-Based approach the new standard to develop web applications now. 
 
 However, as well as Component-based has become a so popular concept, I still see a lot of developers understanding components in a surprisingly weird way.
 
@@ -8,7 +8,7 @@ Which kind of weirdness? (you might be thinking)
 
 a) In the first weird case, I see developers considering a View as a component. So, the "component" is, in fact, a huge piece of code extremely coupled with its context offering zero flexibility and reuse.
  
-b) In the second one, I see developers not considering logicless components as components. They think markup are not worth of encapsulation. The result is a markup code replication and, consequently, pain at the moment you need to make changes in something that should be in one place only.
+b) In the second one, I see developers not considering logicless components as components. They think markup is not worth encapsulation. The result is a markup code replication and, consequently, pain at the moment you need to make changes in something that should be in one place only.
 
 First of all, I would like to share the concept of what I believe to be a component. These are some wise words written by [Derick Bailey](https://twitter.com/derickbailey) in one of his [blog posts](https://derickbailey.com/2015/08/26/building-a-component-based-web-ui-with-modern-javascript-frameworks/):
 
@@ -34,7 +34,7 @@ Now, suppose the product team decided to move the Weather Card to another View. 
 
 Maybe. It depends on how you have organized the code distributed along the homepage. If the homepage is controlled by one piece of code only, you will probably need to make a delicate surgery on this. You have to remove the portion of code related to the Weather Card from those huge homepage files. Then, you will need to accommodate this exact same portion of code into the other View's files.
 
-Is that done, ok? Not yet.
+That's done, ok? Not yet.
 
 The homepage tests will not pass anymore. You have just changed it. The same can happen to the other View tests, once you have also changed that. In a Component-Based approach, Weather Card is a component. It encapsulates all its markup, style, logic and tests. So, all you have to do is moving a simple HTML tag from one View to the other one.
 
