@@ -22,7 +22,7 @@ That said, I'll show you two other benefits beyond reuse which most of the peopl
 
 When you encapsulate a small part of a View in an independent component, you are removing responsibilities from a huge piece of code that would be controlling the whole View. Imagine a website showing some Weather Card on its homepage. On the same homepage you have a bar showing some current stock prices, a logo, a carousel containing some breaking news, and a card with real-time currency rates.
 
-![view-into-components](https://user-images.githubusercontent.com/4738687/35625921-2fc52e08-067b-11e8-9c2c-460e79a87dd5.png)
+![small-responsibilities](https://user-images.githubusercontent.com/4738687/35684802-230bffbe-074f-11e8-9055-bfdd2de0dc02.png)
 
 Why should be the entire homepage controlled by one piece of code only? That doesn't make sense. The more you concentrate responsibility, less you enjoy the power of flexibility.
 
@@ -30,7 +30,7 @@ Why should be the entire homepage controlled by one piece of code only? That doe
 
 Now, suppose the product team decided to move the Weather Card to another View. You have in your hands the job of moving it from one View to another. So easy, right?
 
-![moving-component-between-views](https://user-images.githubusercontent.com/4738687/35625929-349af1ec-067b-11e8-8c74-73c612eb3486.png)
+![flexibility](https://user-images.githubusercontent.com/4738687/35684732-f11f2b3e-074e-11e8-8224-5e1661c928d9.png)
 
 Maybe. It depends on how you have organized the code distributed along the homepage. If the homepage is controlled by one piece of code only, you will probably need to make a delicate surgery on this. You have to remove the portion of code related to the Weather Card from those huge homepage files. Then, you will need to accommodate this exact same portion of code into the other View's files.
 
@@ -38,6 +38,6 @@ That's done, ok? Not yet.
 
 The homepage tests will not pass anymore. You have just changed it. The same can happen to the other View tests, once you have also changed that. In a Component-Based approach, Weather Card is a component. It encapsulates all its markup, style, logic and tests. So, all you have to do is moving a simple HTML tag from one View to the other one.
 
-![dilicate-surgery-vs-flexibility](https://user-images.githubusercontent.com/4738687/35625938-3d17e50a-067b-11e8-8df1-aed2a12dcb66.png)
+![delicate-surgery](https://user-images.githubusercontent.com/4738687/35684758-0aa357ec-074f-11e8-9ae9-2be3e25b4479.png)
 
 As you can see, reuse is actually a consequence of the above two benefits. When you break any View in several small pieces of code (small responsibilities), you make it so easy to move them from a context to another (flexibility) or, consequently, reuse them in any other View.
