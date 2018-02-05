@@ -20,7 +20,7 @@ That said, I'll show you two other benefits beyond reuse which most of the peopl
 
 ## Small Responsibilities
 
-When you encapsulate a small part of a View in an independent component, you are removing responsibilities from a huge piece of code that would be controlling the whole View. Imagine a website showing some Weather Card on its homepage. On the same homepage you have a bar showing some current stock prices, a logo, a carousel containing some breaking news, and a card with real-time currency rates.
+When you encapsulate a small part of a View in an independent component, you are removing responsibilities from a huge piece of code that would be controlling the whole View. Imagine a website showing some Weather Card on its homepage. On the same homepage you can see a bar showing some current stock prices, a logo, a carousel containing some breaking news, and a card with real-time currency rates.
 
 ![small-responsibilities](https://user-images.githubusercontent.com/4738687/35684802-230bffbe-074f-11e8-9055-bfdd2de0dc02.png)
 
@@ -28,7 +28,7 @@ Why should be the entire homepage controlled by one piece of code only? That doe
 
 ## Flexibility
 
-Now, suppose the product team decided to move the Weather Card to another View. You have in your hands the job of moving it from one View to another. So easy, right?
+Now, suppose the product team has decided to move the Weather Card to another View. You have in your hands the job of moving it from one View to another. So easy, right?
 
 ![flexibility](https://user-images.githubusercontent.com/4738687/35684732-f11f2b3e-074e-11e8-8224-5e1661c928d9.png)
 
