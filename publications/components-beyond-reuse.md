@@ -38,6 +38,6 @@ That's done, ok? Not yet.
 
 The homepage tests will not pass anymore. You have just changed it. The same can happen to the other View tests, once you have also changed that. In a Component-Based approach, Weather Card is a component. It encapsulates all its markup, style, logic and tests. So, all you have to do is moving a simple HTML tag from one View to the other one.
 
-![delicate-surgery](https://user-images.githubusercontent.com/4738687/35684758-0aa357ec-074f-11e8-9ae9-2be3e25b4479.png)
+![delicate-surgery](https://user-images.githubusercontent.com/4738687/35798241-4dcdc60e-0a49-11e8-94e2-84dbe8a97f70.png)
 
 As you can see, reuse is actually a consequence of the above two benefits. When you break any View in several small pieces of code (small responsibilities), you make it so easy to move them from a context to another (flexibility) or, consequently, reuse them in any other View.
